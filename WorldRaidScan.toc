@@ -1,0 +1,10 @@
+## Interface: 11200
+## Title: WorldRaidScan
+## Author: Tuziak
+## Version: 1.0
+## SavedVariables: WorldRaidScanDB
+
+Data.lua
+Scanner.lua
+GUI.lua
+WorldRaidScan.lua

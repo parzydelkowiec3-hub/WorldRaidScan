@@ -1,0 +1,1 @@
+/home/deck/twmoa_1172/WTF/Account/LOXIAN/SavedVariables/ChatLogger.lua
