@@ -1,0 +1,12 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Lua / WoW
+*.bak
+*.old
+*.tmp
+*.swp
+
+# Logs
+ChatLoggerLogs.lua

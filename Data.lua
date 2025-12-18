@@ -23,29 +23,24 @@ WRS_Data.Raids = {
     ["ONYXIA"] = "ONY",
     ["KARA10"] = "KARA10",
     ["KARA 10"] = "KARA10",
-    ["KARAZHAN"] = "KARA10", -- Default to 10 if unspecified? Or maybe separate check.
+    ["KARAZHAN"] = "KARA10",
     ["KZ"] = "KARA10",
     ["KARA40"] = "KARA40",
     ["KARA 40"] = "KARA40",
-    ["KARAZJAN40"] = "KARA40", -- From logs
+    ["KARAZJAN40"] = "KARA40",
     ["KARA"] = "KARA10",
     ["KARA10"] = "KARA10",
-    ["ES"] = "ES", -- Emerald Sanctum (Custom)
+    ["ES"] = "ES",
     ["EMERALD SANCTUM"] = "ES",
-    ["HM"] = "ES", -- "ES HM" found in logs (Heroic Mode?) - Context might be risky, but if "ES HM"
-    ["HFQ"] = "HFQ", -- Hateforge Quarry
+    ["HM"] = "ES",
+    ["HFQ"] = "HFQ",
     ["HATEFORGE"] = "HFQ",
-    ["HYJAL"] = "HYJAL", -- WTB SUMMON TO HYJAL (Not raid LFG, but location)
-    -- Logs show: "Into the Dream VI" quest
-    -- Logs show: "DM East"
-    -- Logs show: "SM ARM"
-    -- Logs show: "SCHOLO", "STRATHOLME", "KHARA"
+    ["HYJAL"] = "HYJAL",
     ["KHARA"] = "KARA10",
     ["NAXX"] = "NAXX",
     ["NAXXRAMAS"] = "NAXX",
 }
 
--- Dungeon Aliases
 WRS_Data.Dungeons = {
     ["UBRS"] = "UBRS",
     ["LBRS"] = "LBRS",
@@ -56,15 +51,15 @@ WRS_Data.Dungeons = {
     ["STRATHOLME"] = "STRAT",
     ["LIVING"] = "STRAT",
     ["UNDEAD"] = "STRAT",
-    ["DM"] = "DM", -- Dire Maul or Deadmines context usually DM N/E/W is Dire Maul
+    ["DM"] = "DM",
     ["DM EAST"] = "DM",
     ["DM WEST"] = "DM",
     ["DM NORTH"] = "DM",
     ["TRIBUTE"] = "DM",
-    ["HFQ"] = "HFQ", -- Hateforge Quarry (Custom)
+    ["HFQ"] = "HFQ",
     ["HATEFORGE"] = "HFQ",
     ["SM"] = "SM",
-    ["ARM"] = "SM", -- Scarlet Monastery Armory
+    ["ARM"] = "SM",
     ["CATH"] = "SM",
     ["LIB"] = "SM",
     ["GY"] = "SM",
@@ -72,9 +67,43 @@ WRS_Data.Dungeons = {
     ["ZUL'FARRAK"] = "ZF",
 }
 
--- Patterns
--- Simple string API in Lua 5.0 (find, match, gfind)
+WRS_Data.FullNames = {
+    ["MC"] = "Molten Core",
+    ["BWL"] = "Blackwing Lair",
+    ["ZG"] = "Zul'Gurub",
+    ["AQ20"] = "Ruins of Ahn'Qiraj",
+    ["AQ40"] = "Temple of Ahn'Qiraj",
+    ["NAXX"] = "Naxxramas",
+    ["ONY"] = "Onyxia's Lair",
+    ["KARA10"] = "Karazhan (10)",
+    ["KARA40"] = "Karazhan (40)",
+    ["ES"] = "Emerald Sanctum",
+    ["HFQ"] = "Hateforge Quarry",
+    ["HYJAL"] = "Mount Hyjal",
+    
+    ["UBRS"] = "Upper Blackrock Spire",
+    ["LBRS"] = "Lower Blackrock Spire",
+    ["BRD"] = "Blackrock Depths",
+    ["SCHOLO"] = "Scholomance",
+    ["STRAT"] = "Stratholme",
+    ["DM"] = "Dire Maul / Deadmines",
+    ["SM"] = "Scarlet Monastery",
+    ["ZF"] = "Zul'Farrak",
+}
+
 WRS_Data.Patterns = {
-    LFG = { "LFM", "LF%dM", "LF", "WTB", "RECRUITING", "LOOKING FOR" },
+    General = { "LFM", "LF%dM", "LF", "WTB", "RECRUITING", "LOOKING FOR" },
+    
+    GuildLFM = { 
+        "RECRUIT", "RECRUITING", "LFM", "LF MEMBERS", "LF RAIDERS", 
+        "WE NEED", "JOIN US", "CORE SPOTS", "ROSTER", "PROGRESS" 
+    },
+    
+    GuildLFG = { 
+        "LF GUILD", "LOOKING FOR GUILD", "LFG", 
+        "LF SOCIAL", "LF CASUAL", "LF RAIDING GUILD",
+        "WTJ", "WANT TO JOIN"
+    },
+    
     Roles = { "TANK", "HEAL", "DPS", "DMG" },
 }

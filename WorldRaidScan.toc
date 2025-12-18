@@ -1,7 +1,8 @@
 ## Interface: 11200
 ## Title: WorldRaidScan
+## Notes: Scans chat for Raid, Dungeon, Quest, and Guild messages and organizes them into a sortable list.
 ## Author: Tuziak
-## Version: 1.0
+## Version: 1.1
 ## SavedVariables: WorldRaidScanDB
 
 Data.lua
